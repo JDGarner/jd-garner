@@ -8,7 +8,7 @@ const PATHS = {
 
 const config = {
   devtool: "eval-source-map",
-  entry: PATHS.src + "/app.js",
+  entry: PATHS.src + "/entrypoint.js",
   output: {
     path: PATHS.dist,
     filename: "bundle.js",
