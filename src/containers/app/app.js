@@ -1,34 +1,23 @@
 import React from "react";
-import { getPlaces } from "../../api/places";
-import Place from "../../components/place/place";
+import Header from "../../components/header/header";
+import Footer from "../../components/footer/footer";
 
 class App extends React.Component {
-	constructor() {
-		super();
-		this.state = {
-			places: getPlaces(),
-			currentPlaceIndex: 0
-		};
-	}
+  constructor() {
+    super();
+    this.state = {};
+  }
 
-	onClickNextPlace() {
-		this.setState({
-			currentPlaceIndex: (this.state.currentPlaceIndex + 1) % this.state.places.length
-		});
-	}
+  // TODO: maybe refactor this into just high level component that container react rotuer and stuff
 
-	render() {
-		return (
-			<div>
-				<header className="header">
-					<h2>Stuff I Like</h2>
-				</header>
-				<Place name={this.state.places[this.state.currentPlaceIndex].name} />
-				<footer>
-					<button onClick={() => this.onClickNextPlace()}>Next Place</button>
-				</footer>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div>
+        <Header />
+        Content Here
+        <Footer/>
+      </div>
+    );
+  }
 }
 export default App;
