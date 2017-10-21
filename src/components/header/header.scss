@@ -1,3 +1,8 @@
 .header {
-	font-weight: bold;
+  display: flex;
+  font-weight: bold;
+
+  .navbar {
+    display: flex;
+  }
 }

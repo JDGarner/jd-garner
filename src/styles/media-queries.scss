@@ -1,0 +1,14 @@
+$tablet-screen-breakpoint: "(max-width: 950px)";
+$mobile-screen-breakpoint: "(max-width: 600px)";
+
+@mixin tablet {
+  @media #{$tablet-screen-breakpoint} {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media #{$mobile-screen-breakpoint} {
+    @content;
+  }
+}

@@ -1,3 +1,7 @@
-.header {
-	color: grey;
+.app {
+  padding: 3rem;
+
+  @include mobile {
+    padding: 1rem;
+  }
 }

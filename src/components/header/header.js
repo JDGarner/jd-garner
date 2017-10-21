@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 export default function Header(props) {
   return (
     <header className="header">
-      <ul>
-        <li>
-          <Link to="/">Blog</Link>
-        </li>
+      <div className="home">
+        <Link to="/">JD Garner</Link>
+      </div>
+      <ul className="navbar">
         <li>
           <Link to="/reading-list">Reading List</Link>
         </li>

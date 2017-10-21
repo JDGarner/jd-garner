@@ -15,16 +15,21 @@ const config = {
     publicPath: "/"
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         include: PATHS.src,
         loader: "babel-loader"
       },
       {
+        test: /\.css$/,
+        include: path.join(__dirname, "node_modules/normalize.css"),
+        use: ["style-loader", "css-loader"]
+      },
+      {
         test: /\.scss$/,
         include: PATHS.src,
-        loader: "style-loader!css-loader!sass-loader"
+        use: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
   },
