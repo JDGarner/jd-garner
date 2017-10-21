@@ -8,7 +8,7 @@ import Work from "../../components/work/work";
 class MainContent extends React.Component {
   render() {
     return (
-      <main>
+      <main className="main">
         <Switch>
           <Route exact path="/" component={Blog} />
           <Route path="/reading-list" component={ReadingList} />

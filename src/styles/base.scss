@@ -1,4 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+// @import url('https://fonts.googleapis.com/css?family=Lato:300');
+
 @import "./reset.css";
 @import "./media-queries";
+
 @import "../containers/app/app";
+@import "../containers/main-content/main-content";
+
 @import "../components/header/header";
+@import "../components/footer/footer";

@@ -1,8 +1,29 @@
 .header {
   display: flex;
+  align-items: center;
   font-weight: bold;
+  height: 10%;
+  border-bottom: 1px solid #e2e2e2;
+
+  .home {
+    text-transform: uppercase;
+  }
 
   .navbar {
     display: flex;
+    margin-left: auto;
+
+    li {
+      padding: 0 0.5rem;
+      text-transform: uppercase;
+
+      a {
+        color: #999;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
   }
 }
