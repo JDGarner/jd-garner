@@ -3,9 +3,14 @@
 
 @import "./reset.css";
 @import "./media-queries";
+@import "./mixins";
 
 @import "../containers/app/app";
 @import "../containers/main-content/main-content";
 
 @import "../components/header/header";
 @import "../components/footer/footer";
+@import "../components/reading-list/reading-list";
+@import "../components/work/work";
+
+
