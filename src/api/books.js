@@ -11,7 +11,7 @@ export function getBooks() {
       imageURL: "http://t3.gstatic.com/images?q=tbn:ANd9GcTYNrCa9hSeMACYN6LKR5V6giLGl01A539P6m-k8e9pLNKsaNt7"
     },
     {
-      name: "Sapiens",
+      name: "Sapiens: A Brief History of Humankind",
       author: "Yuval Noah Harari",
       imageURL: "http://t1.gstatic.com/images?q=tbn:ANd9GcSHVXeWmvpa49exMoaNYRAQ-ZzCM_yHL-BXUU4PdWwXXO3YaNpg"
     },

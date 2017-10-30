@@ -1,14 +1,14 @@
-$tablet-screen-breakpoint: "(max-width: 950px)";
-$mobile-screen-breakpoint: "(max-width: 600px)";
+$medium-screen-breakpoint: "(max-width: 60em)";
+$small-screen-breakpoint: "(max-width: 45em)";
 
-@mixin tablet {
-  @media #{$tablet-screen-breakpoint} {
+@mixin medium {
+  @media #{$medium-screen-breakpoint} {
     @content;
   }
 }
 
-@mixin mobile {
-  @media #{$mobile-screen-breakpoint} {
+@mixin small {
+  @media #{$small-screen-breakpoint} {
     @content;
   }
 }

@@ -1,22 +1,18 @@
 import React from "react";
 
 function WorkItem(props) {
-  if (props.workItem.link) {
-    return (
-      <div className="work-item">
+  return (
+    <div className="col-4 work-item">
+      {props.workItem.link ? (
         <img
           onClick={() => followLink(props.workItem.link)}
           src={props.workItem.imageURL}
         />
-      </div>
-    );
-  } else {
-    return (
-      <div className="work-item">
-        {props.workItem.name}
-      </div>
-    );
-  }
+      ) : (
+        props.workItem.name
+      )}
+    </div>
+  );
 }
 
 const followLink = link => {
@@ -25,7 +21,7 @@ const followLink = link => {
 
 export default function Work(props) {
   return (
-    <section className="work">
+    <section className="work row">
       {props.work.map((workItem, i) => (
         <WorkItem workItem={workItem} key={i} />
       ))}

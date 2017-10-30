@@ -1,29 +1,40 @@
 .reading-list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-
   .book {
-    width: calc(100% * 1/5);
     display: flex;
     flex-direction: column;
-    padding: 2rem 0;
-    text-align: center;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    @include hover-item;
 
     img {
-      width: 90%;
-      height: 24vw;
-      margin: 0 auto;
-      // backface-visibility: hidden;
+      width: 100%;
+      height: 22vw;
       object-fit: cover;
 
-      @include hover-item;
+      @include small {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
 
-      // &:hover {
-      //   opacity: 0.6;
-      //   transition: all 0.3s ease;
-      //   cursor: pointer;
-      // }
+    .book-description {
+      width: 100%;
+      height: 4rem;
+      color: black;
+      padding-top: .25rem;
+      font-size: 0.85rem;
+
+      @include small {
+        text-align: center;
+      }
+
+      .author {
+        color: #adafb4;
+      }
     }
   }
 }
+
+// #e8276c

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 // @import url('https://fonts.googleapis.com/css?family=Lato:300');
 
+@import "./grid/simple-grid";
 @import "./reset.css";
 @import "./media-queries";
 @import "./mixins";
@@ -9,8 +10,6 @@
 @import "../containers/main-content/main-content";
 
 @import "../components/header/header";
-@import "../components/footer/footer";
 @import "../components/reading-list/reading-list";
-@import "../components/work/work";
 
 

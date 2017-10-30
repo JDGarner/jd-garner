@@ -1,12 +1,8 @@
 .work {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
 
-	.work-item {
-    width: calc(100% * 1/3 - 10px);
+  .work-item {
     height: 30vw;
-    padding: 0 5px;
     display: flex;
     align-items: center;
     justify-content: center;
